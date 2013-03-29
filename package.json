@@ -1,18 +1,43 @@
 {
-    "name": "juice"
-  , "version": "0.0.6"
-  , "description": "Inlines css into html source"
-  , "contributors": [
-        { "name": "Guillermo Rauch", "email": "guillermo@learnboost.com" }
-      , { "name": "Arian Stolwijk", "email": "arian@aryweb.nl" }
-    ]
-  , "dependencies": {
-        "cssom": "0.2"
-      , "jsdom": "0.3"
-      , "mootools-slick-parser": "git://github.com/rpflorence/mootools-slick-parser.git"
+  "name": "juice",
+  "version": "0.3.2",
+  "description": "Inlines css into html source",
+  "bin": "./bin/juice",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "contributors": [
+    {
+      "name": "Guillermo Rauch",
+      "email": "guillermo@learnboost.com"
+    },
+    {
+      "name": "Arian Stolwijk",
+      "email": "arian@aryweb.nl"
+    },
+    {
+      "name": "Paweł Marzec",
+      "email": "rork@cojestgrane.pl"
+    },
+    {
+      "name": "Andrew Kelley",
+      "email": "superjoe30@gmail.com"
     }
-  , "devDependencies": {
-        "should": "0.3.1"
-      , "expresso": "0.9.0"
-    }
+  ],
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "cssom": "~0.2.5",
+    "jsdom": "~0.5.4",
+    "batch": "~0.3.2",
+    "superagent": "~0.13.0",
+    "commander": "~1.1.1",
+    "slick": "~1.10.0"
+  },
+  "devDependencies": {
+    "should": "~1.2.2",
+    "expresso": "~0.9.2",
+    "mocha": "~1.8.2"
+  }
 }

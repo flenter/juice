@@ -22,6 +22,7 @@ div[a=b] .wrap div { /* [0, 2, 2] */
 #wrap[a=c] div.wrap #a { /* [2, 2, 1] - no match */
   background: #00f;
 }
+
 #wrap .wrap #a { /* [2, 1, 0] */
   background: #f00;
 }
